@@ -1,0 +1,32 @@
+{
+  "name": "nextjs-csv-validate-import",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "csv:create": "node ./tools/create-csv.js",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "axios": "^1.6.2",
+    "class-transformer": "^0.5.1",
+    "class-validator": "^0.14.0",
+    "csv-parser": "^3.0.0",
+    "formidable": "^3.5.1",
+    "next": "14.0.4",
+    "react": "^18",
+    "react-dom": "^18"
+  },
+  "devDependencies": {
+    "@types/formidable": "^3.4.5",
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "eslint": "^8",
+    "eslint-config-next": "14.0.4",
+    "reflect-metadata": "^0.2.1",
+    "typescript": "^5"
+  }
+}
