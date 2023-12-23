@@ -1,0 +1,17 @@
+runtime: nodejs20
+env: standard
+
+service: nextjs-csv-import
+
+env_variables:
+  NODE_ENV: "production"
+  APP_ENV: "development"
+  APP_BASE_URL: "https://nextjs-csv-import-dot-sharedvpcproject-380815.as.r.appspot.com"
+
+manual_scaling:
+  instances: 1
+
+handlers:
+  - url: /.*
+    secure: always
+    script: auto

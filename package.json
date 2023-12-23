@@ -3,18 +3,18 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "cp ./envs/.env.local ./.env && next dev",
     "csv:create": "node ./tools/create-csv.js",
     "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
+    "start": "next start -p 8080",
+    "lint": "next lint",
+    "deploy": "bash ./scripts/deploy.sh"
   },
   "dependencies": {
     "axios": "^1.6.2",
     "class-transformer": "^0.5.1",
     "class-validator": "^0.14.0",
-    "csv-parser": "^3.0.0",
-    "formidable": "^3.5.1",
+    "neat-csv": "^7.0.0",
     "next": "14.0.4",
     "react": "^18",
     "react-dom": "^18"
